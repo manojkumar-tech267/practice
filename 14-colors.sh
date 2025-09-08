@@ -50,8 +50,8 @@ dnf list installed python
 if [ $? -ne 0 ]
 then 
     echo -e "$R Python is not here we are going to install!!! $N"
-    dnf install python -y
-    VALIDATE $? "Python"
+    dnf install python3 -y
+    VALIDATE $? "Python3"
 else 
     echo -e "$Y Python is already there we are skipping $N"
 fi
