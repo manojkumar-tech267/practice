@@ -40,6 +40,7 @@ dnf list installed nginx
 if [ $? -ne 0 ]
 then 
     echo -e "$R Nginx is not there we are going to install $N"
+    dnf install nginx -y
     VALIDATE $? "Nginx"
 else 
     echo -e "$Y Nginx is already there we are skipping $N"
