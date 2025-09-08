@@ -46,12 +46,12 @@ else
     echo -e "$Y Nginx is already there we are skipping $N"
 fi 
 
-dnf list installed python 
+dnf list installed ansible
 if [ $? -ne 0 ]
 then 
-    echo -e "$R Python is not here we are going to install!!! $N"
-    dnf install python3 -y
-    VALIDATE $? "Python3"
+    echo -e "$R ansible is not here we are going to install!!! $N"
+    dnf install ansible -y
+    VALIDATE $? "ansible"
 else 
-    echo -e "$Y Python is already there we are skipping $N"
+    echo -e "$Y ansible is already there we are skipping $N"
 fi
