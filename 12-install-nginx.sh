@@ -18,6 +18,7 @@ VALIDATE()
   else 
     echo "$2 is failed"
     exit 1
+  fi
 }
 
 
