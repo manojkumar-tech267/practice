@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "git::https://github.com/manojkumar-tech267/interview-preparation.git//terraform/01-modules/modules/vpc?ref=main"
+    source = "git::https://github.com/manojkumar-tech267/practice.git//vpc?ref=main"
     project = "roboshop"
     environment = "dev"
     public_cidr_blocks = ["10.0.1.0/24","10.0.2.0/24"]
