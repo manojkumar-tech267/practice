@@ -1,0 +1,14 @@
+- name: Play Variables in Ansible 
+  hosts: local 
+  connection: local 
+  vars:
+    Name: Manoj Kumar
+    Profession: Devops Engineer 
+    Hometown: Repalle 
+    Age: 27
+  
+
+  tasks:
+    - name: Print User Information 
+      ansible.builtin.debug:
+        msg: "My name is {{ Name }}, I am working as a {{ Profession }}, I am from {{ Hometown }}, My Age is {{ Age }}"
