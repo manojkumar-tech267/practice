@@ -1,9 +1,0 @@
-- name: Inventory Variables in Ansible 
-  hosts: local 
-  connection: local 
-
-
-  tasks:
-    - name: print user information 
-      ansible.builtin.debug:
-        msg: "My name is {{ Name }}, My Age is {{ Age }}"
